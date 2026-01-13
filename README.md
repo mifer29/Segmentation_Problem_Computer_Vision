@@ -9,8 +9,9 @@ Author: Miguel Fernández Lara
 
 The complete project is inside the main notebook. The structure is the following:
 
-```text
+
 main.ipynb
+```text
 │
 ├─ 1. Project Setting
 │
@@ -43,7 +44,7 @@ main.ipynb
 │ └─ 8.2 Anomaly Detection Ablation (AUPR / AP)
 │
 └─ 9. Final Conclusion
-
+```
 
 ### Model weights
 
