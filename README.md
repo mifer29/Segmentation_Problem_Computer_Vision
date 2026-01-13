@@ -3,6 +3,22 @@ Segmentation Problem Computer Vision
 
 Author: Miguel Fernández Lara
 
+## Project Overview
+
+This project addresses the problem of open-set semantic segmentation for urban driving scenes, with a particular focus on detecting unexpected (anomalous) objects on the road. Traditional semantic segmentation models are limited to predicting only classes seen during training, which makes them unsuitable for safety-critical scenarios such as autonomous driving, where unknown objects (animals, debris...) may appear.
+
+The goal of this project is to design and evaluate a semantic segmentation model that is able to:
+
+- Accurately segment known semantic classes present during training.
+
+- Detect and localize anomalous objects that are not included in the training label set.
+
+The project uses the StreetHazards dataset, a synthetic dataset generated with CARLA and Unreal Engine, containing realistic urban scenes with inserted anomalous objects. While the training and validation sets include 12 known classes, the anomaly class is present only in the test set, enforcing a true open-set evaluation setting.
+
+The implemented approach uses deep learning based semantic segmentation models and open-set/anomaly detection strategies to identify pixels that do not belong to any known class. The anomaly class remains completely unseen during training and is evaluated exclusively at test time.
+
+This work explores methods that improve robustness and safety awareness in semantic segmentation, contributing toward more reliable perception systems for autonomous driving and other real-world applications where unknown objects may appear.
+
 ## Project Structure
 
 ### main.ipynb
@@ -39,9 +55,9 @@ main.ipynb
 │ │ └─ 7.1.4 SegFormer
 │ └─ 7.2 Qualitative Analysis (anomaly heatmaps)
 │
-├─ 8. Ablation Study
+├─ 8. Results
 │ ├─ 8.1 Global Segmentation Performance (mIoU)
-│ └─ 8.2 Anomaly Detection Ablation (AUPR / AP)
+│ └─ 8.2 Anomaly Detection Results (AUPR / AP)
 │
 └─ 9. Final Conclusion
 ```
