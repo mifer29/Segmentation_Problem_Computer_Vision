@@ -1,2 +1,2 @@
-# Segmentation_Problem_Computer_Vision
-Semantic segmentation and anomaly detection on roads
+# Semantic segmentation and anomaly detection on roads
+Segmentation Problem Computer Vision
